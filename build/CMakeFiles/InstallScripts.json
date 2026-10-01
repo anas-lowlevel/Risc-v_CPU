@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/auth/risc-vcpu/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

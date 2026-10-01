@@ -1,0 +1,4 @@
+/home/auth/risc-vcpu/build/CMakeFiles/counter_build.dir
+/home/auth/risc-vcpu/build/CMakeFiles/test.dir
+/home/auth/risc-vcpu/build/CMakeFiles/edit_cache.dir
+/home/auth/risc-vcpu/build/CMakeFiles/rebuild_cache.dir

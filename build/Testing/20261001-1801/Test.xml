@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20261001-1801-Experimental"
+	Name="(empty)"
+	Generator="ctest-4.2.3"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="Auth"
+	OSRelease="6.18.40.1-microsoft-standard-WSL2"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Fri Jul 31 22:12:15 UTC 2026"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="140"
+	ModelName="11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz"
+	ProcessorCacheSize="12288"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="2048"
+	TotalPhysicalMemory="7816"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2803.2"
+	>
+	<Testing>
+		<StartDateTime>Oct 01 21:10 EEST</StartDateTime>
+		<StartTestTime>1790878201</StartTestTime>
+		<TestList/>
+		<EndDateTime>Oct 01 21:10 EEST</EndDateTime>
+		<EndTestTime>1790878201</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
