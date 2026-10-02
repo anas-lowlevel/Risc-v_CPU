@@ -5,20 +5,20 @@
 // The class here is then constructed to instantiate the design.
 // See the Verilator manual for examples.
 
-#ifndef VERILATED_VPROGRAM_COUNTER_H_
-#define VERILATED_VPROGRAM_COUNTER_H_  // guard
+#ifndef VERILATED_VINSTRUCTION_MEMORY_H_
+#define VERILATED_VINSTRUCTION_MEMORY_H_  // guard
 
 #include "verilated.h"
 
-class Vprogram_counter__Syms;
-class Vprogram_counter___024root;
+class Vinstruction_memory__Syms;
+class Vinstruction_memory___024root;
 class VerilatedVcdC;
 
 // This class is the main interface to the Verilated model
-class alignas(VL_CACHE_LINE_BYTES) Vprogram_counter VL_NOT_FINAL : public VerilatedModel {
+class alignas(VL_CACHE_LINE_BYTES) Vinstruction_memory VL_NOT_FINAL : public VerilatedModel {
   private:
     // Symbol table holding complete model state (owned by this class)
-    Vprogram_counter__Syms* const vlSymsp;
+    Vinstruction_memory__Syms* const vlSymsp;
 
   public:
 
@@ -36,19 +36,19 @@ class alignas(VL_CACHE_LINE_BYTES) Vprogram_counter VL_NOT_FINAL : public Verila
 
     // Root instance pointer to allow access to model internals,
     // including inlined /* verilator public_flat_* */ items.
-    Vprogram_counter___024root* const rootp;
+    Vinstruction_memory___024root* const rootp;
 
     // CONSTRUCTORS
     /// Construct the model; called by application code
     /// If contextp is null, then the model will use the default global context
     /// If name is "", then makes a wrapper with a
     /// single model invisible with respect to DPI scope names.
-    explicit Vprogram_counter(VerilatedContext* contextp, const char* name = "TOP");
-    explicit Vprogram_counter(const char* name = "TOP");
+    explicit Vinstruction_memory(VerilatedContext* contextp, const char* name = "TOP");
+    explicit Vinstruction_memory(const char* name = "TOP");
     /// Destroy the model; called (often implicitly) by application code
-    virtual ~Vprogram_counter();
+    virtual ~Vinstruction_memory();
   private:
-    VL_UNCOPYABLE(Vprogram_counter);  ///< Copying not allowed
+    VL_UNCOPYABLE(Vinstruction_memory);  ///< Copying not allowed
 
   public:
     // API METHODS

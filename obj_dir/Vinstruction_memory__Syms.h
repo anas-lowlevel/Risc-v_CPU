@@ -4,24 +4,24 @@
 // Internal details; most calling programs do not need this header,
 // unless using verilator public meta comments.
 
-#ifndef VERILATED_VPROGRAM_COUNTER__SYMS_H_
-#define VERILATED_VPROGRAM_COUNTER__SYMS_H_  // guard
+#ifndef VERILATED_VINSTRUCTION_MEMORY__SYMS_H_
+#define VERILATED_VINSTRUCTION_MEMORY__SYMS_H_  // guard
 
 #include "verilated.h"
 #include "verilated_vcd_c.h"
 
 // INCLUDE MODEL CLASS
 
-#include "Vprogram_counter.h"
+#include "Vinstruction_memory.h"
 
 // INCLUDE MODULE CLASSES
-#include "Vprogram_counter___024root.h"
+#include "Vinstruction_memory___024root.h"
 
 // SYMS CLASS (contains all model state)
-class alignas(VL_CACHE_LINE_BYTES)Vprogram_counter__Syms final : public VerilatedSyms {
+class alignas(VL_CACHE_LINE_BYTES)Vinstruction_memory__Syms final : public VerilatedSyms {
   public:
     // INTERNAL STATE
-    Vprogram_counter* const __Vm_modelp;
+    Vinstruction_memory* const __Vm_modelp;
     bool __Vm_dumping = false;  // Dumping is active
     VerilatedMutex __Vm_dumperMutex;  // Protect __Vm_dumperp
     VerilatedVcdC* __Vm_dumperp VL_GUARDED_BY(__Vm_dumperMutex) = nullptr;  /// Trace class for $dump*
@@ -31,14 +31,14 @@ class alignas(VL_CACHE_LINE_BYTES)Vprogram_counter__Syms final : public Verilate
     bool __Vm_didInit = false;
 
     // MODULE INSTANCE STATE
-    Vprogram_counter___024root     TOP;
+    Vinstruction_memory___024root  TOP;
 
     // SCOPE NAMES
-    VerilatedScope __Vscope_program_counter_tb;
+    VerilatedScope __Vscope_instruction_memory_tb;
 
     // CONSTRUCTORS
-    Vprogram_counter__Syms(VerilatedContext* contextp, const char* namep, Vprogram_counter* modelp);
-    ~Vprogram_counter__Syms();
+    Vinstruction_memory__Syms(VerilatedContext* contextp, const char* namep, Vinstruction_memory* modelp);
+    ~Vinstruction_memory__Syms();
 
     // METHODS
     const char* name() { return TOP.name(); }

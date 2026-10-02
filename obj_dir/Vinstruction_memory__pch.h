@@ -3,11 +3,11 @@
 //
 // Internal details; most user sources do not need this header,
 // unless using verilator public meta comments.
-// Suggest use Vprogram_counter.h instead.
+// Suggest use Vinstruction_memory.h instead.
 
 
-#ifndef VERILATED_VPROGRAM_COUNTER__PCH_H_
-#define VERILATED_VPROGRAM_COUNTER__PCH_H_  // guard
+#ifndef VERILATED_VINSTRUCTION_MEMORY__PCH_H_
+#define VERILATED_VINSTRUCTION_MEMORY__PCH_H_  // guard
 
 // GCC and Clang only will precompile headers (PCH) for the first header.
 // So, make sure this is the one and only PCH.
@@ -20,8 +20,8 @@
 
 #include "verilated.h"
 
-#include "Vprogram_counter__Syms.h"
-#include "Vprogram_counter.h"
+#include "Vinstruction_memory__Syms.h"
+#include "Vinstruction_memory.h"
 
 // Additional include files added using '--compiler-include'
 

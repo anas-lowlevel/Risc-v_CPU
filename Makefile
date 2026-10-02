@@ -1,12 +1,21 @@
-SIM = verilator
-RUN = vvp
+VERILATOR = verilator
+VERILATOR_FLAGS = --binary --trace
 
-pc_sim:
-	$(SIM) --binary --trace rtl/program_counter.sv tb/program_counter_tb.sv
+RTL_DIR = rtl
+TB_DIR = tb
+BUILD_DIR = obj_dir
 
-test: pc_sim
-	./obj_dir/Vprogram_counter
+MODULE = instruction_memory
+
+RTL = $(RTL_DIR)/$(MODULE).sv
+TB = $(TB_DIR)/$(MODULE)_tb.sv
+
+.PHONY : test clean
+
+test:
+	$(VERILATOR) $(VERILATOR_FLAGS) $(RTL) $(TB)
+	./$(BUILD_DIR)/V$(MODULE)
 
 clean:
-	rm -rf obj_dir
+	rm -rf $(BUILD_DIR)
 	rm -f *.vcd

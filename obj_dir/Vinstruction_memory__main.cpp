@@ -2,7 +2,7 @@
 // DESCRIPTION: main() calling loop, created with Verilator --main
 
 #include "verilated.h"
-#include "Vprogram_counter.h"
+#include "Vinstruction_memory.h"
 
 //======================
 
@@ -14,7 +14,7 @@ int main(int argc, char** argv, char**) {
     contextp->commandArgs(argc, argv);
 
     // Construct the Verilated model, from Vtop.h generated from Verilating
-    const std::unique_ptr<Vprogram_counter> topp{new Vprogram_counter{contextp.get(), ""}};
+    const std::unique_ptr<Vinstruction_memory> topp{new Vinstruction_memory{contextp.get(), ""}};
 
     // Simulate until $finish
     while (!contextp->gotFinish()) {

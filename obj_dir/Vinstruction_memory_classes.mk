@@ -2,7 +2,7 @@
 # DESCRIPTION: Verilator output: Make include file with class lists
 #
 # This file lists generated Verilated files, for including in higher level makefiles.
-# See Vprogram_counter.mk for the caller.
+# See Vinstruction_memory.mk for the caller.
 
 ### Switches...
 # C11 constructs required?  0/1 (always on now)
@@ -23,25 +23,26 @@ VM_TRACE_FST = 0
 ### Object file lists...
 # Generated module classes, fast-path, compile with highest optimization
 VM_CLASSES_FAST += \
-	Vprogram_counter \
-	Vprogram_counter___024root__DepSet_hc4fa20d5__0 \
-	Vprogram_counter___024root__DepSet_h51c0ce58__0 \
-	Vprogram_counter__main \
+	Vinstruction_memory \
+	Vinstruction_memory___024root__DepSet_hc88666bd__0 \
+	Vinstruction_memory___024root__DepSet_hfd3a187e__0 \
+	Vinstruction_memory__main \
 
 # Generated module classes, non-fast-path, compile with low/medium optimization
 VM_CLASSES_SLOW += \
-	Vprogram_counter___024root__Slow \
-	Vprogram_counter___024root__DepSet_h51c0ce58__0__Slow \
+	Vinstruction_memory___024root__Slow \
+	Vinstruction_memory___024root__DepSet_hc88666bd__0__Slow \
+	Vinstruction_memory___024root__DepSet_hfd3a187e__0__Slow \
 
 # Generated support classes, fast-path, compile with highest optimization
 VM_SUPPORT_FAST += \
-	Vprogram_counter__Trace__0 \
+	Vinstruction_memory__Trace__0 \
 
 # Generated support classes, non-fast-path, compile with low/medium optimization
 VM_SUPPORT_SLOW += \
-	Vprogram_counter__Syms \
-	Vprogram_counter__Trace__0__Slow \
-	Vprogram_counter__TraceDecls__0__Slow \
+	Vinstruction_memory__Syms \
+	Vinstruction_memory__Trace__0__Slow \
+	Vinstruction_memory__TraceDecls__0__Slow \
 
 # Global classes, need linked once per executable, fast-path, compile with highest optimization
 VM_GLOBAL_FAST += \
