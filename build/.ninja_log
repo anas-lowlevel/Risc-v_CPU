@@ -1,7 +1,0 @@
-# ninja log v7
-0	6810	1790878333981535504	counter_obj/Vcounter_tb	f04b5b7c33235769
-0	6810	1790878333981535504	/home/auth/risc-vcpu/build/counter_obj/Vcounter_tb	f04b5b7c33235769
-1	9769	1790878598716921303	counter_obj/Vcounter_tb	f04b5b7c33235769
-1	9769	1790878598716921303	/home/auth/risc-vcpu/build/counter_obj/Vcounter_tb	f04b5b7c33235769
-0	9368	1790878628827069904	counter_obj/Vcounter_tb	f04b5b7c33235769
-0	9368	1790878628827069904	/home/auth/risc-vcpu/build/counter_obj/Vcounter_tb	f04b5b7c33235769
