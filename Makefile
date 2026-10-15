@@ -1,5 +1,5 @@
 VERILATOR = verilator
-VERILATOR_FLAGS = --binary --trace
+VERILATOR_FLAGS = --binary --trace-fst
 
 RTL_DIR = rtl
 TB_DIR = tb
@@ -10,7 +10,7 @@ MODULE = instruction_memory
 RTL = $(RTL_DIR)/$(MODULE).sv
 TB = $(TB_DIR)/$(MODULE)_tb.sv
 
-.PHONY : test clean
+.PHONY: test clean
 
 test:
 	$(VERILATOR) $(VERILATOR_FLAGS) $(RTL) $(TB)
@@ -18,4 +18,4 @@ test:
 
 clean:
 	rm -rf $(BUILD_DIR)
-	rm -f *.vcd
+	rm -f *.fst *.vcd
